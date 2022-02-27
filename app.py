@@ -26,4 +26,5 @@ def login():
         user = request.args.get('name')
         return render_template('login.html')
 
-app.run(host='0.0.0.0', port=81)
+if __name__ == '__main__':
+    app.run(debug=True)
